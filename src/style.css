@@ -1,5 +1,8 @@
 body {
-    background-color: white;
+    background-image: url("https://www.dropbox.com/scl/fi/pscmqxptohmw5w8a90lc4/mountains.jpg?rlkey=f4mdak1ddcuf8b3v10aayw4h5&raw=1");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: "Roboto", sans-serif;
   
 }
