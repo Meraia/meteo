@@ -10,7 +10,8 @@ a {
   color: #885df1;
 }
 .weather-app {
-    background: white;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(8px);
     max-width: 600px;
     margin: 120px auto;
     padding: 30px;
@@ -27,11 +28,16 @@ main {
   padding: 30px 0;
 }
 
+.search-form {
+  display: flex;
+  gap: 10px;
+}
 .search-form-input {
     background-color:#F9F7FE;
     border: none;
     border-radius: 12px;
-    width: 80%;
+    width: auto;
+    flex: 1;
     padding:15px 20px;
     font-size: 16px;
 
@@ -43,11 +49,17 @@ main {
   border-radius: 6px;
   padding: 15px 30px;
   cursor: pointer;
-  margin-left: 5px;
+  margin-left: 0;
+ 
+}
+.search-form-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 .weather-app-data {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 .weather-app-city {
@@ -66,6 +78,7 @@ main {
 }
 .weather-app-temperature-container {
     display: flex;
+    align-items: flex-start;
 }
 .weather-app-icon {
   font-size: 44px;
