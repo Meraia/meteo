@@ -26,6 +26,9 @@ header {
 
 main {
   padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .search-form {
@@ -57,14 +60,14 @@ main {
   transform: translateY(-1px);
 }
 .weather-app-data {
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
 
 }
 .weather-app-city {
     margin: 0;
-    font-size: 38px;
+    font-size: 48px;
     line-height: 48px;
 }
 .weather-app-details {
@@ -81,18 +84,18 @@ main {
     align-items: flex-start;
 }
 .weather-app-icon {
-  font-size: 44px;
-  margin-top: 22px;
+  font-size: 46px;
+  margin-top: 12px;
 }
 
 .weather-app-temperature {
-  font-size: 88px;
+  font-size: 80px;
   margin-left: 10px;
   font-weight: bold;
 }
 
 .weather-app-unit {
-  margin-top: 16px;
+  margin-top: 8px;
   font-size: 28px;
 }
 footer {
