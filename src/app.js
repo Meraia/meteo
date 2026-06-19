@@ -12,7 +12,7 @@ function refreshWeather(response){
     
 console.log(response.data.condition.icon_url);
 
-    iconElement.innerHTML=`<img src="${response.data.condition.icon.url}" class = "weather-app-icon"/>`;
+    iconElement.innerHTML=`<img src="${response.data.condition.icon_url}" class = "weather-app-icon"/>`;
 
     cityElement.innerHTML = response.data.city;
     temperatureElement.innerHTML=Math.round(temperature);
