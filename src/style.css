@@ -84,9 +84,10 @@ main {
     align-items: flex-start;
 }
 .weather-app-icon {
-  font-size: 46px;
-  margin-top: 12px;
+  width: 88px;
+  height: 88px;
 }
+
 
 .weather-app-temperature {
   font-size: 80px;
