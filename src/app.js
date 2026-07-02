@@ -65,4 +65,34 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 console.log(searchFormElement);
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+//display forecast function
+function displayForecast (){
+ let days = ["Tue","Wed","Thurs","Fri","Sat"];
+ let forecastHtml ="";
+
+ days.forEach(function(day) {
+    forecastHtml = 
+     forecastHtml +
+
+`
+ <div class="weather-forecast-day">
+       <div class="weather-forecast-date">${day}</div>
+       <div class="weather-forecast-icon"> 🌤️ </div>
+       <div class="weather-forecast-temperatures">
+        <div class="weather-forecast-temperature"><strong>15°</strong> </div>
+        <div class="weather-forecast-temperature">15°</div>
+        </div>
+        </div>
+        `;
+
+});
+
+let forecastElement = document.querySelector("#forecast");
+forecastElement.innerHTML=forecastHtml;
+}
+
+//function calls
 searchCity("Vancouver")
+displayForecast();
+
